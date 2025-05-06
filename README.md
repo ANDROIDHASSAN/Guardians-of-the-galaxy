@@ -34,10 +34,13 @@ Visit: https://api.nasa.gov
 Sign up and get your API key
 
 ### 4. Create .env File
+```bash
 REACT_APP_NASA_API_KEY=your_api_key_here
-
+```
 ### 5. Start the App
+```bash
 npm start
+```
 
 📁 Folder Structure
 
