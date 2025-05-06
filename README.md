@@ -1,64 +1,54 @@
-# orrery
-An interactive map of the Solar System created with Three.js and jQuery.
+# 🚀 Guardians of the galaxy – 3D Near-Earth Object Visualization
 
-This is currently live at http://alltheseworldsareyours.com
+Guardinas of the galaxy is an interactive 3D web application that visualizes real-time **Near-Earth Objects (NEOs)** using the official **NASA API**. It simulates these objects moving like real celestial bodies within a realistic solar system. Users can also explore planets and detailed information in an educational and engaging way.
 
-It's definitely better as a desktop web experience than mobile in the current version.
+## 🌟 Features
 
-## Requirements
-- [Three.js](https://github.com/mrdoob/three.js/)
-- [jQuery](https://github.com/jquery/jquery) and [jQuery UI](https://github.com/jquery/jquery-ui)
-- [Tween.js](https://github.com/tweenjs/tween.js/)
+- **🌌 Realistic Solar System:** Visualize all 8 planets in 3D with click-to-learn functionality.
+- **☄️ Live NEO Tracking:** Fetches real-time NEO data from NASA and shows them in space like asteroids/comets.
+- **📊 NEO Table:** Tabular view of NEO data like name, approach date, size, velocity, and distance.
+- **🔭 Planet Lab:** Get info about all planets—distance from the sun, size, number of moons, etc.
+- **📘 Intro Section:** Educational section explaining what NEOs are and their significance.
 
-## Features
-- Ephemerides for astronomical bodies in the Solar System, searachable for all above 1km in radius 
-- Exaggerated orrery view at the solar system scale, zoomable to true scale for planetary systems
-- Live data readout for the body's physical and orbital characteristics, right ascension/declination and altitude/azimuth coordintes relative to current location, rise and set times, and magnitude adjusted for atmospheric dispersion
-- Links to articles and images from Wikipedia
-- Background stars include all above 7th magnitude
-- HTTPvars for latitiude/longitude, start time, and reducing particle count
+## 🛠 Tech Stack
 
-## Setup
-- npm init
-- npm i three-js
+- **Frontend:** React.js, Three.js
+- **Backend:** Node.js
+- **API:** NASA NeoWs (Near-Earth Object Web Service)
 
-## Usage
-### Navigation
-- SPACE BAR: Pause/resume time
-- LEFT/RIGHT ARROW KEYS: Change speed
-- DOWN ARROW KEY: Set to current time
-- UP ARROW KEY: Toggle chase mode on focused object
-- ESC: Release focus on object
-- F2: Hide/show UI panels
-- F4: Hide/show celestial sphere
-- F8: Hide/show extra time info
-- CLICK ON LABELS: Shift focus to object and display info
-- CLICK ON INFO HEADER OR IMAGE: Learn more on Wikipedia
-- LEFT/MID/RIGHT MOUSE + DRAG: Rotate/zoom/translate around focus
-- SCROLL WHEEL: Zoom to focus
-### HTTP Variables
-- ?x=(decimal degrees): Longitude
-- ?y=(decimal degrees): Latitude
-- ?t=(YYYYMMDDHHMM): Date (Years can be -9999 to 9999, time in military time format, e.g. 0615)
-- ?n=(integer) Small asteroid limit
 
-## Potential Roadmap
-- UI scaling for mobile
-- Object count throttling from FPS observation
-- Non-periodic comets/hyperbolic orbits (`Omuamua, etc.)
-- Extended data/add ins for smaller objects
-- Planetarium view with sky shader
-- Asteroid categorization from orbital elements
-- Asteroid 3D shapes
-- Ring shadows
-- Spacecraft/Two Line Element reader
-- NASA SPICE kernels
-- Better image compression (Basis)
-- THREE.CSS2D renderer or Canvas for tags (if faster)
-- Procedural textures
-- Exoplanetary systems
-- Lagrange points/Hill spheres for planets
-- XR
-- Hohmann transfer orbits, launch window solver, delta-v requirements
-- Gravitational simulations
-- Compute shaders
+## 🚀 How to Run Locally
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/neospace.git
+cd neospace
+```
+### 2. Install Dependencies
+```bash
+npm install
+```
+### 3. Get NASA API Key
+Visit: https://api.nasa.gov
+
+Sign up and get your API key
+
+### 4. Create .env File
+REACT_APP_NASA_API_KEY=your_api_key_here
+
+### 5. Start the App
+npm start
+
+📁 Folder Structure
+
+/client - React frontend
+/server - Node backend
+📚 Resources
+NASA NeoWs API Docs
+
+Three.js Documentation
+
+🤝 Contributing
+Feel free to fork this repo, make improvements, and submit a pull request!
+
+Made with ❤️ by Hassan Kazi and Team
